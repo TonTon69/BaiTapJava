@@ -58,4 +58,17 @@ public class DSCONNGUOI {
             }
         }
     }
+
+    public void themCN(CONNGUOI cn) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1: HỌC VIÊN -- 2: NHÂN VIÊN -- HÃY CHỌN ĐỂ THÊM --");
+        byte tam = sc.nextByte();
+        if (tam == 1) {
+            cn = new HOCVIEN();
+            cn.Input();
+        } else if (tam == 2) {
+            cn = new NHANVIEN();
+            cn.Input();
+        }
+    }
 }
