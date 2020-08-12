@@ -27,7 +27,6 @@ public class WithdrawTransaction extends ATMTransaction {
 
     public void Output() {
         super.Output(); // To change body of generated methods, choose Tools | Templates.
-
         System.out.println(toString());
     }
 

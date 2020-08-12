@@ -41,11 +41,7 @@ public class ATMTransaction {
     }
 
     public void Output() {
-        System.out.println("ATMTransaction{" + "Date=" + Date + '}');
+        System.out.println("ATMTransaction{" + "TransactionID=" + TransactionID + " , Date=" + Date + '}');
     }
 
-    @Override
-    public String toString() {
-        return "ATMTransaction{" + "Date=" + Date + '}';
-    }
 }
