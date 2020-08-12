@@ -25,18 +25,16 @@ public class WithdrawTransaction extends ATMTransaction {
         this.Amount = Amount;
     }
 
-    @Override
     public void Output() {
         super.Output(); // To change body of generated methods, choose Tools | Templates.
-        System.out.println("WithdrawTransaction{" + "Amount=" + Amount + '}');
+
+        System.out.println(toString());
     }
 
-    @Override
     public String toString() {
         return "WithdrawTransaction{" + "Amount=" + Amount + '}';
     }
 
-    @Override
     public void Input() {
         super.Input(); // To change body of generated methods, choose Tools | Templates.
         Scanner sc = new Scanner(System.in);

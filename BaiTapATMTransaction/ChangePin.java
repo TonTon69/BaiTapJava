@@ -58,12 +58,12 @@ public class ChangePin extends ATMTransaction {
     }
 
     public void Change(Account acc) {
-        // if (acc.getPin() == OldPin) {
-        // acc.getPin() = newPin;
-        // System.out.println("Doi ma pin thanh cong");
-        // }
+        if (acc.getPin() == OldPin) {
+            acc.setPin(newPin);
+            System.out.println("Doi ma pin thanh cong");
+        }
         if (acc.getPin() != OldPin) {
-            System.out.println("sai mat khau");
+            System.out.println("Sai mat khau");
         }
     }
 
